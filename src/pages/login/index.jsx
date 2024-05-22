@@ -24,7 +24,7 @@ const Login = () => {
             const {data} = await api.get(`/users?email=${formData.email}&senha=${formData.senha}`);
             
             if(data.length && data[0].id){
-                navigate('/feed') 
+                navigate('/feed')
                 return
             }
 
